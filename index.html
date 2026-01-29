@@ -102,6 +102,22 @@
       79%  { transform: translateY(428.57143px); }
       100% { transform: translateY(180px); }
     }
+ #heartPhoto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 120px;       /* adjust size if needed */
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 3px solid #ea80b0;
+  box-shadow: 0 0 25px #ea80b0;
+  z-index: 1001;
+  background: #000;
+}
   </style>
 </head>
 <body>
@@ -111,6 +127,7 @@
   <a href="https://pan.quark.cn/s/3344d23e48a8" class="quick-link" title="Source Code">Code</a>
   <a href="https://shop1619956412.v.weidian.com/?userid=1619956412&spider_token=2720" class="quick-link" title="Gift">Gift</a>
 
+  <img id="heartPhoto" src="me.jpg" alt="My photo">
   <div id="ui"></div>
 
   <script>
